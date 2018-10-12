@@ -1,0 +1,153 @@
+body {
+    background-color: #E6EBE0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+
+button {
+    background-color: #ED6A5A;
+    border: hidden;
+    border-radius: 10px;
+    padding: 10px
+}
+.desktop {
+    display: none;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about {
+    border-left: 2px solid #5CA4A9;
+    padding-left: 10px
+}
+
+.combo {
+    display: flex;
+    margin: 20px 0;
+}
+
+.quoteoftheday {
+    height: 200px;
+    width: 200px;
+    margin: 20px
+}
+
+.pig {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+
+.quoteoftheday p {
+    text-align: center
+}
+
+.examples {
+    display: flex;    
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%
+}
+
+@media only screen and (min-width: 700px) {
+
+    button{
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .desktop a,p {
+        margin: 20px
+    }
+
+    h4 {
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .about h6,a {
+        margin: 20px
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        background-color: #ED6A5A; 
+        color: white;
+        border-radius: 10px;
+    }
+
+  
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .combo {
+        flex-direction: column;
+        width: 45%;
+        float: left;
+    
+    }
+     .examples {
+         float: right;
+         display: flex;
+         flex-wrap: wrap;
+         width: 46%;
+     }
+
+     .images{
+         width: 200px;
+         margin: 20px;
+         display: flex;
+         margin-top: 50px
+     }
+
+     img {
+         width: 200px;
+         height: 200px;
+     }
+
+     .quoteoftheday {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         height: 500px;
+     }
+
+     .pig {
+         width: 300px;
+         height: 300px;
+     }
+
+     h6 {
+         font-size: 30px
+     }
+}
